@@ -228,6 +228,9 @@ class RutubeVideo:
     def title(self):
         return self.__str__()
 
+    def segment_urls(self):
+        return self._segment_urls
+
     def _get_segment_urls(self):
         if self._segment_urls:
             return self._segment_urls
